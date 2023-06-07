@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { filtersValid, setFilter } from './filtro.actions';
+import {  filtersValid, setFilter } from './filtro.actions';
 
 
 export const initialState: string = 'all';

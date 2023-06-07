@@ -6,5 +6,5 @@
             <a [ngClass]="{'selected': typeFilter === filter}">{{filter | titlecase}}</a>
         </li>
     </ul>
-    <button class="clear-completed">Borrar Completados</button>
+    <button class="clear-completed" (click)="clearCompleted()">Borrar Completados</button>
 </footer>

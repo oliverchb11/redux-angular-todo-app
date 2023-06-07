@@ -2,6 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/app.reducer';
 import * as actions  from '../../filter/filtro.actions';
+import { clearCompleted } from '../todo.actions';
 
 
 
@@ -31,5 +32,8 @@ export class TodoFooterComponent implements OnInit{
     this.store.dispatch(actions.setFilter({filter: filter}))
   }
 
+  public clearCompleted(): void{
+    this.store.dispatch(clearCompleted())
+  }
 
 }
