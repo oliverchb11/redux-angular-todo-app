@@ -1,0 +1,8 @@
+<li [ngClass]="{'completed': todosItem.completed, 'editing' : editTodo}" (dblclick)="procedEdit()">
+    <div class="view">
+        <input class="toggle" type="checkbox" [formControl]="checkCompleted">
+        <label>{{todosItem.text}}</label>
+        <button class="destroy" (click)="deleteTodo()"></button>
+    </div>
+    <input class="edit" type="text" [formControl]="textInput" (keyup.enter)="editTodos()" (blur)="endEdition()" #inputEdit>
+</li>

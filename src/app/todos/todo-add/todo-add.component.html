@@ -1,0 +1,6 @@
+<header class="header">
+    <h1>todos</h1>
+    <form [formGroup]="form" (ngSubmit)="addTodo(form.value)">
+        <input class="new-todo" placeholder="Que quieres hacer?" autofocus formControlName="text">
+    </form>
+</header>
